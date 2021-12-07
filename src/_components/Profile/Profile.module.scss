@@ -1,0 +1,32 @@
+.profile {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 200px;
+  box-shadow: 2px 2px 1px 0px #00000033, 2px 2px 1px 0px #00000024,
+    2px 2px 3px 2px #0000001f;
+}
+
+.avatar {
+  display: block;
+  width: 120px;
+  border: 1px solid grey;
+  border-radius: 50%;
+}
+
+.name {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.tag {
+  margin-bottom: 8px;
+  color: #757575;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-bottom: 1px solid #000;
+}
