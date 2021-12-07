@@ -3,7 +3,7 @@ import FriendListItem from './FriendListItem/FriendListItem';
 
 export default function FriendList({ friends }) {
   return (
-    <ul class="friend-list">
+    <ul className={s.friendList}>
       <FriendListItem friends={friends} />
     </ul>
   );

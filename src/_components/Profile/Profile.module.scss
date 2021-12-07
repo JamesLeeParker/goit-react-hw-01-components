@@ -1,12 +1,15 @@
 .profile {
   margin-top: 50px;
   margin-left: 50px;
+  padding-top: 20px;
+  border-radius: 6px;
   width: 200px;
   box-shadow: 2px 2px 1px 0px #00000033, 2px 2px 1px 0px #00000024,
     2px 2px 3px 2px #0000001f;
 }
 
 .avatar {
+  margin-bottom: 20px;
   display: block;
   width: 120px;
   border: 1px solid grey;
@@ -23,10 +26,47 @@
   color: #757575;
 }
 
+.location {
+  margin-bottom: 15px;
+  color: #757575;
+}
+
 .description {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.4);
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(117, 117, 117, 0.2);
+
+  &:nth-child(2) {
+    border-right: 1px solid rgba(117, 117, 117, 0.4);
+    border-left: 1px solid rgba(117, 117, 117, 0.4);
+  }
+}
+
+.label {
+  color: #757575;
+  font-size: 12px;
+  text-align: center;
+}
+
+.quantity {
+  color: #212121;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
 }

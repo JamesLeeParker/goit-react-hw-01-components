@@ -1,0 +1,14 @@
+.item {
+  &:nth-child(2n + 1) {
+    background-color: rgba(128, 128, 128, 0.3);
+  }
+}
+
+.info {
+  padding: 5px 0;
+  text-align: center;
+  width: 200px;
+
+  font-size: 12px;
+  color: rgba(117, 117, 117);
+}

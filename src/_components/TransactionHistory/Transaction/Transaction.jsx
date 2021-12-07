@@ -1,10 +1,12 @@
+import s from './Transaction.module.scss';
+
 export default function Transaction({ transactions }) {
   return transactions.map(transaction => {
     return (
-      <tr key={transaction.id}>
-        <td>{transaction.type}</td>
-        <td>{transaction.amount}</td>
-        <td>{transaction.currency}</td>
+      <tr className={s.item} key={transaction.id}>
+        <td className={s.info}>{transaction.amount}</td>
+        <td className={s.info}>{transaction.type}</td>
+        <td className={s.info}>{transaction.currency}</td>
       </tr>
     );
   });
