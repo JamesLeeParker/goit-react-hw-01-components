@@ -1,11 +1,10 @@
 import s from './Statistics.module.scss';
-import data from '../../data/data.json';
 import ListItem from '../Statistics/LIstItem/ListItem';
 
-export default function Statistics() {
+export default function Statistics({ data, title }) {
   return (
     <section className={s.statistics}>
-      <h2 className={s.title}>Upload stats</h2>
+      {title && <h2 className={s.title}>{title}</h2>}
 
       <ul className={s.statList}>
         <ListItem data={data} />
